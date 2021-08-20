@@ -1,0 +1,14 @@
+Sub MultiFindNReplace()
+'Updateby Extendoffice
+Dim Rng As Range
+Dim InputRng As Range, ReplaceRng As Range
+xTitleId = "KutoolsforExcel"
+Set InputRng = Application.Selection
+Set InputRng = Application.InputBox("Original Range ", xTitleId, InputRng.Address, Type:=8)
+Set ReplaceRng = Application.InputBox("Replace Range :", xTitleId, Type:=8)
+Application.ScreenUpdating = False
+For Each Rng In ReplaceRng.Columns(1).Cells
+    InputRng.Replace what:=Rng.Value, replacement:=Rng.Offset(0, 1).Value
+Next
+Application.ScreenUpdating = True
+End Sub
