@@ -1,0 +1,34 @@
+{
+    "name": "",
+    "templates": [
+      {
+        "name": "",
+        "valObject": "object"
+      }
+    ]
+  }
+
+
+
+ ---GOOD---
+{
+  "name": "Test",
+  "templates": [
+    {
+      "name": "banners",
+      "valObject": {
+        "motd": "b",
+        "issue": "a"
+        }
+    }
+  ]
+}
+
+
+
+---- templateSelection ---
+
+[
+  "banners",
+  "system"
+]

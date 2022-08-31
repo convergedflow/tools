@@ -1,0 +1,2728 @@
+[
+    {
+      "category": {
+        "id": 9320580,
+        "title": "Credit Card Payments",
+        "colour": null,
+        "is_transfer": true,
+        "is_bill": false,
+        "refund_behaviour": null,
+        "children": [],
+        "parent_id": 9320535,
+        "roll_up": false,
+        "created_at": "2022-07-05T11:20:30Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": true,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -4200,
+        "average_forecast_amount": -4200,
+        "total_under_by": 4200,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -4200,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 4200,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": 4200,
+        "average_forecast_amount": 4200,
+        "total_under_by": 4200,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": 4200,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 4200,
+            "percentage_used": 0
+          }
+        ]
+      }
+    },
+    {
+      "category": {
+        "id": 9862953,
+        "title": "In to Savings",
+        "colour": null,
+        "is_transfer": true,
+        "is_bill": false,
+        "refund_behaviour": "debits_are_deductions",
+        "children": [],
+        "parent_id": 9320535,
+        "roll_up": false,
+        "created_at": "2022-08-12T10:46:06Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": null,
+      "income": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": 0,
+        "average_forecast_amount": 0,
+        "total_under_by": 0,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": 0,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 0,
+            "percentage_used": 0
+          }
+        ]
+      }
+    },
+    {
+      "category": {
+        "id": 9320604,
+        "title": "Salary",
+        "colour": "#2196F3",
+        "is_transfer": false,
+        "is_bill": true,
+        "refund_behaviour": "debits_are_deductions",
+        "children": [],
+        "parent_id": 9862686,
+        "roll_up": false,
+        "created_at": "2022-07-05T11:20:56Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": null,
+      "income": {
+        "start_date": "2022-07-31",
+        "end_date": "2022-08-30",
+        "currency_code": "aud",
+        "total_actual_amount": 423.5,
+        "average_actual_amount": 423.5,
+        "total_forecast_amount": 11100,
+        "average_forecast_amount": 11100,
+        "total_under_by": 10676.5,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-07-31",
+            "end_date": "2022-08-30",
+            "currency_code": "aud",
+            "actual_amount": 423.5,
+            "forecast_amount": 11100,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 10676.5,
+            "percentage_used": 3
+          }
+        ]
+      }
+    },
+    {
+      "category": {
+        "id": 9862692,
+        "title": "Rent",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": true,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": null,
+        "roll_up": false,
+        "created_at": "2022-08-12T09:36:28Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-18",
+        "end_date": "2022-09-17",
+        "currency_code": "aud",
+        "total_actual_amount": -2042.26,
+        "average_actual_amount": -2042.26,
+        "total_forecast_amount": -2042.26,
+        "average_forecast_amount": -2042.26,
+        "total_under_by": 0,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-18",
+            "end_date": "2022-09-17",
+            "currency_code": "aud",
+            "actual_amount": -2042.26,
+            "forecast_amount": -2042.26,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 0,
+            "percentage_used": 100
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862587,
+        "title": "Food, Clothing & Personal Items",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [
+          {
+            "id": 9320589,
+            "title": "Dues & Subscriptions",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862587,
+            "roll_up": true,
+            "created_at": "2022-07-05T11:20:34Z",
+            "updated_at": "2022-08-27T07:36:10Z"
+          },
+          {
+            "id": 9320763,
+            "title": "Takeaway Coffee",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862587,
+            "roll_up": false,
+            "created_at": "2022-07-05T11:34:31Z",
+            "updated_at": "2022-08-27T08:06:01Z"
+          },
+          {
+            "id": 9320625,
+            "title": "Treats",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862587,
+            "roll_up": false,
+            "created_at": "2022-07-05T11:24:41Z",
+            "updated_at": "2022-08-27T08:06:44Z"
+          },
+          {
+            "id": 9320565,
+            "title": "Personal Care",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862587,
+            "roll_up": false,
+            "created_at": "2022-07-05T11:20:30Z",
+            "updated_at": "2022-08-27T07:36:10Z"
+          },
+          {
+            "id": 9320574,
+            "title": "Clothing/Shoes",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862587,
+            "roll_up": false,
+            "created_at": "2022-07-05T11:20:30Z",
+            "updated_at": "2022-08-27T07:45:18Z"
+          },
+          {
+            "id": 9320550,
+            "title": "Groceries",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862587,
+            "roll_up": false,
+            "created_at": "2022-07-05T11:20:29Z",
+            "updated_at": "2022-08-27T07:49:17Z"
+          },
+          {
+            "id": 9862695,
+            "title": "Dining",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [
+              {
+                "id": 9330381,
+                "title": "Drunk Food",
+                "colour": null,
+                "is_transfer": false,
+                "is_bill": false,
+                "refund_behaviour": "credits_are_refunds",
+                "children": [],
+                "parent_id": 9862695,
+                "roll_up": false,
+                "created_at": "2022-07-06T13:59:15Z",
+                "updated_at": "2022-08-27T07:36:10Z"
+              },
+              {
+                "id": 9320547,
+                "title": "Dining Out",
+                "colour": null,
+                "is_transfer": false,
+                "is_bill": false,
+                "refund_behaviour": "credits_are_refunds",
+                "children": [],
+                "parent_id": 9862695,
+                "roll_up": false,
+                "created_at": "2022-07-05T11:20:29Z",
+                "updated_at": "2022-08-27T07:36:10Z"
+              },
+              {
+                "id": 9320610,
+                "title": "Workday Lunch",
+                "colour": null,
+                "is_transfer": false,
+                "is_bill": false,
+                "refund_behaviour": "credits_are_refunds",
+                "children": [],
+                "parent_id": 9862695,
+                "roll_up": false,
+                "created_at": "2022-07-05T11:23:15Z",
+                "updated_at": "2022-08-27T07:36:10Z"
+              },
+              {
+                "id": 9862590,
+                "title": "Delivery & Takeaway",
+                "colour": null,
+                "is_transfer": false,
+                "is_bill": false,
+                "refund_behaviour": "credits_are_refunds",
+                "children": [],
+                "parent_id": 9862695,
+                "roll_up": false,
+                "created_at": "2022-08-12T08:44:30Z",
+                "updated_at": "2022-08-27T07:36:10Z"
+              }
+            ],
+            "parent_id": 9862587,
+            "roll_up": false,
+            "created_at": "2022-08-12T09:36:29Z",
+            "updated_at": "2022-08-27T07:36:10Z"
+          },
+          {
+            "id": 9876663,
+            "title": "Coffee Beans",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862587,
+            "roll_up": false,
+            "created_at": "2022-08-14T03:12:35Z",
+            "updated_at": "2022-08-27T07:36:10Z"
+          },
+          {
+            "id": 9971970,
+            "title": "Snacks",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862587,
+            "roll_up": false,
+            "created_at": "2022-08-22T06:30:16Z",
+            "updated_at": "2022-08-27T07:36:10Z"
+          },
+          {
+            "id": 9984168,
+            "title": "Masks",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862587,
+            "roll_up": false,
+            "created_at": "2022-08-23T11:30:14Z",
+            "updated_at": "2022-08-27T07:36:10Z"
+          }
+        ],
+        "parent_id": null,
+        "roll_up": true,
+        "created_at": "2022-08-12T08:44:30Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-01-01",
+        "end_date": "2022-12-31",
+        "currency_code": "aud",
+        "total_actual_amount": -13441.9,
+        "average_actual_amount": -13441.9,
+        "total_forecast_amount": -14518.72,
+        "average_forecast_amount": -14518.72,
+        "total_under_by": 1076.82,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-01-01",
+            "end_date": "2022-12-31",
+            "currency_code": "aud",
+            "actual_amount": -13441.9,
+            "forecast_amount": -14518.72,
+            "refund_amount": 25,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 1076.82,
+            "percentage_used": 92
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9320589,
+        "title": "Dues & Subscriptions",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862587,
+        "roll_up": true,
+        "created_at": "2022-07-05T11:20:34Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -106.47,
+        "average_actual_amount": -106.47,
+        "total_forecast_amount": -31.52,
+        "average_forecast_amount": -31.52,
+        "total_under_by": 0,
+        "total_over_by": 74.95,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -106.47,
+            "forecast_amount": -31.52,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": true,
+            "under_budget": false,
+            "over_by": 74.95,
+            "under_by": 0,
+            "percentage_used": 337
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9320763,
+        "title": "Takeaway Coffee",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862587,
+        "roll_up": false,
+        "created_at": "2022-07-05T11:34:31Z",
+        "updated_at": "2022-08-27T08:06:01Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -106.89,
+        "average_actual_amount": -106.89,
+        "total_forecast_amount": -77.9,
+        "average_forecast_amount": -77.9,
+        "total_under_by": 0,
+        "total_over_by": 28.99,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -106.89,
+            "forecast_amount": -77.9,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": true,
+            "under_budget": false,
+            "over_by": 28.99,
+            "under_by": 0,
+            "percentage_used": 137
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9320625,
+        "title": "Treats",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862587,
+        "roll_up": false,
+        "created_at": "2022-07-05T11:24:41Z",
+        "updated_at": "2022-08-27T08:06:44Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -30.43,
+        "average_actual_amount": -30.43,
+        "total_forecast_amount": -33.8,
+        "average_forecast_amount": -33.8,
+        "total_under_by": 3.37,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -30.43,
+            "forecast_amount": -33.8,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 3.37,
+            "percentage_used": 90
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9320565,
+        "title": "Personal Care",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862587,
+        "roll_up": false,
+        "created_at": "2022-07-05T11:20:30Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -50.55,
+        "average_actual_amount": -50.55,
+        "total_forecast_amount": -80,
+        "average_forecast_amount": -80,
+        "total_under_by": 29.45,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -50.55,
+            "forecast_amount": -80,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 29.45,
+            "percentage_used": 63
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9320574,
+        "title": "Clothing/Shoes",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862587,
+        "roll_up": false,
+        "created_at": "2022-07-05T11:20:30Z",
+        "updated_at": "2022-08-27T07:45:18Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-07-01",
+        "end_date": "2023-06-30",
+        "currency_code": "aud",
+        "total_actual_amount": -348.82,
+        "average_actual_amount": -348.82,
+        "total_forecast_amount": -677.07,
+        "average_forecast_amount": -677.07,
+        "total_under_by": 328.25,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-07-01",
+            "end_date": "2023-06-30",
+            "currency_code": "aud",
+            "actual_amount": -348.82,
+            "forecast_amount": -677.07,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 328.25,
+            "percentage_used": 51
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9320550,
+        "title": "Groceries",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862587,
+        "roll_up": false,
+        "created_at": "2022-07-05T11:20:29Z",
+        "updated_at": "2022-08-27T07:49:17Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -348.75,
+        "average_actual_amount": -348.75,
+        "total_forecast_amount": -463.32,
+        "average_forecast_amount": -463.32,
+        "total_under_by": 114.57,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -348.75,
+            "forecast_amount": -463.32,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 114.57,
+            "percentage_used": 75
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9330381,
+        "title": "Drunk Food",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862695,
+        "roll_up": false,
+        "created_at": "2022-07-06T13:59:15Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -50.25,
+        "average_actual_amount": -50.25,
+        "total_forecast_amount": -23,
+        "average_forecast_amount": -23,
+        "total_under_by": 0,
+        "total_over_by": 27.25,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -50.25,
+            "forecast_amount": -23,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": true,
+            "under_budget": false,
+            "over_by": 27.25,
+            "under_by": 0,
+            "percentage_used": 218
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9320547,
+        "title": "Dining Out",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862695,
+        "roll_up": false,
+        "created_at": "2022-07-05T11:20:29Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-22",
+        "end_date": "2022-08-28",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -110,
+        "average_forecast_amount": -110,
+        "total_under_by": 110,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-22",
+            "end_date": "2022-08-28",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -110,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 110,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9320610,
+        "title": "Workday Lunch",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862695,
+        "roll_up": false,
+        "created_at": "2022-07-05T11:23:15Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-22",
+        "end_date": "2022-08-28",
+        "currency_code": "aud",
+        "total_actual_amount": -45.8,
+        "average_actual_amount": -45.8,
+        "total_forecast_amount": -35,
+        "average_forecast_amount": -35,
+        "total_under_by": 0,
+        "total_over_by": 10.8,
+        "periods": [
+          {
+            "start_date": "2022-08-22",
+            "end_date": "2022-08-28",
+            "currency_code": "aud",
+            "actual_amount": -45.8,
+            "forecast_amount": -35,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": true,
+            "under_budget": false,
+            "over_by": 10.8,
+            "under_by": 0,
+            "percentage_used": 130
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862590,
+        "title": "Delivery & Takeaway",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862695,
+        "roll_up": false,
+        "created_at": "2022-08-12T08:44:30Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -222.7,
+        "average_actual_amount": -222.7,
+        "total_forecast_amount": -100,
+        "average_forecast_amount": -100,
+        "total_under_by": 0,
+        "total_over_by": 122.7,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -222.7,
+            "forecast_amount": -100,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": true,
+            "under_budget": false,
+            "over_by": 122.7,
+            "under_by": 0,
+            "percentage_used": 222
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9876663,
+        "title": "Coffee Beans",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862587,
+        "roll_up": false,
+        "created_at": "2022-08-14T03:12:35Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -23,
+        "average_forecast_amount": -23,
+        "total_under_by": 23,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -23,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 23,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9971970,
+        "title": "Snacks",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862587,
+        "roll_up": false,
+        "created_at": "2022-08-22T06:30:16Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -3.6,
+        "average_actual_amount": -3.6,
+        "total_forecast_amount": -4,
+        "average_forecast_amount": -4,
+        "total_under_by": 0.4,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -3.6,
+            "forecast_amount": -4,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 0.4,
+            "percentage_used": 90
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862698,
+        "title": "Transport & Vehicles",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [
+          {
+            "id": 9323235,
+            "title": "Parking",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862698,
+            "roll_up": false,
+            "created_at": "2022-07-06T00:06:29Z",
+            "updated_at": "2022-08-27T07:36:10Z"
+          },
+          {
+            "id": 9320799,
+            "title": "Ridesharing/Taxis",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862698,
+            "roll_up": false,
+            "created_at": "2022-07-05T11:48:01Z",
+            "updated_at": "2022-08-27T07:36:10Z"
+          },
+          {
+            "id": 9859596,
+            "title": "Public Transport",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862698,
+            "roll_up": false,
+            "created_at": "2022-08-12T01:55:35Z",
+            "updated_at": "2022-08-27T07:36:10Z"
+          },
+          {
+            "id": 9862701,
+            "title": "Petrol",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862698,
+            "roll_up": false,
+            "created_at": "2022-08-12T09:36:30Z",
+            "updated_at": "2022-08-27T07:36:10Z"
+          },
+          {
+            "id": 9862704,
+            "title": "Tolls",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862698,
+            "roll_up": false,
+            "created_at": "2022-08-12T09:36:30Z",
+            "updated_at": "2022-08-27T07:36:10Z"
+          },
+          {
+            "id": 9862707,
+            "title": "Vehicle Repairs & Maintenance",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862698,
+            "roll_up": false,
+            "created_at": "2022-08-12T09:36:30Z",
+            "updated_at": "2022-08-27T07:36:10Z"
+          },
+          {
+            "id": 9862710,
+            "title": "Vehicle Insurances",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862698,
+            "roll_up": false,
+            "created_at": "2022-08-12T09:36:30Z",
+            "updated_at": "2022-08-27T07:36:10Z"
+          },
+          {
+            "id": 9862713,
+            "title": "License & Registration",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862698,
+            "roll_up": false,
+            "created_at": "2022-08-12T09:36:30Z",
+            "updated_at": "2022-08-27T07:36:10Z"
+          },
+          {
+            "id": 9862716,
+            "title": "Fines",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862698,
+            "roll_up": false,
+            "created_at": "2022-08-12T09:36:30Z",
+            "updated_at": "2022-08-27T07:36:10Z"
+          },
+          {
+            "id": 9876699,
+            "title": "Transfer Duty",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": null,
+            "children": [],
+            "parent_id": 9862698,
+            "roll_up": false,
+            "created_at": "2022-08-14T03:18:52Z",
+            "updated_at": "2022-08-27T07:36:10Z"
+          },
+          {
+            "id": 9876732,
+            "title": "Car Upgrades",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862698,
+            "roll_up": false,
+            "created_at": "2022-08-14T03:24:04Z",
+            "updated_at": "2022-08-27T07:36:11Z"
+          },
+          {
+            "id": 9957666,
+            "title": "Vehicle Purchase",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862698,
+            "roll_up": false,
+            "created_at": "2022-08-21T09:42:16Z",
+            "updated_at": "2022-08-27T07:36:11Z"
+          }
+        ],
+        "parent_id": null,
+        "roll_up": true,
+        "created_at": "2022-08-12T09:36:29Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -280.13,
+        "average_actual_amount": -280.13,
+        "total_forecast_amount": -622,
+        "average_forecast_amount": -622,
+        "total_under_by": 341.87,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -280.13,
+            "forecast_amount": -622,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 341.87,
+            "percentage_used": 45
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9323235,
+        "title": "Parking",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862698,
+        "roll_up": false,
+        "created_at": "2022-07-06T00:06:29Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -10,
+        "average_forecast_amount": -10,
+        "total_under_by": 10,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -10,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 10,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9320799,
+        "title": "Ridesharing/Taxis",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862698,
+        "roll_up": false,
+        "created_at": "2022-07-05T11:48:01Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -25.87,
+        "average_actual_amount": -25.87,
+        "total_forecast_amount": -70,
+        "average_forecast_amount": -70,
+        "total_under_by": 44.13,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -25.87,
+            "forecast_amount": -70,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 44.13,
+            "percentage_used": 36
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9859596,
+        "title": "Public Transport",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862698,
+        "roll_up": false,
+        "created_at": "2022-08-12T01:55:35Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -17,
+        "average_forecast_amount": -17,
+        "total_under_by": 17,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -17,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 17,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862701,
+        "title": "Petrol",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862698,
+        "roll_up": false,
+        "created_at": "2022-08-12T09:36:30Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -173.01,
+        "average_actual_amount": -173.01,
+        "total_forecast_amount": -300,
+        "average_forecast_amount": -300,
+        "total_under_by": 126.99,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -173.01,
+            "forecast_amount": -300,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 126.99,
+            "percentage_used": 57
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862707,
+        "title": "Vehicle Repairs & Maintenance",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862698,
+        "roll_up": false,
+        "created_at": "2022-08-12T09:36:30Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -80,
+        "average_forecast_amount": -80,
+        "total_under_by": 80,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -80,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 80,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862710,
+        "title": "Vehicle Insurances",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862698,
+        "roll_up": false,
+        "created_at": "2022-08-12T09:36:30Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -81.25,
+        "average_actual_amount": -81.25,
+        "total_forecast_amount": -80,
+        "average_forecast_amount": -80,
+        "total_under_by": 0,
+        "total_over_by": 1.25,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -81.25,
+            "forecast_amount": -80,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": true,
+            "under_budget": false,
+            "over_by": 1.25,
+            "under_by": 0,
+            "percentage_used": 101
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862713,
+        "title": "License & Registration",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862698,
+        "roll_up": false,
+        "created_at": "2022-08-12T09:36:30Z",
+        "updated_at": "2022-08-27T07:36:10Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -65,
+        "average_forecast_amount": -65,
+        "total_under_by": 65,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -65,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 65,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862239,
+        "title": "Treatments",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862719,
+        "roll_up": false,
+        "created_at": "2022-08-12T06:57:23Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -220,
+        "average_forecast_amount": -220,
+        "total_under_by": 220,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -220,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 220,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862206,
+        "title": "Gym",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": true,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862719,
+        "roll_up": false,
+        "created_at": "2022-08-12T06:55:54Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-07",
+        "end_date": "2022-09-06",
+        "currency_code": "aud",
+        "total_actual_amount": -42,
+        "average_actual_amount": -42,
+        "total_forecast_amount": -41.65,
+        "average_forecast_amount": -41.65,
+        "total_under_by": 0,
+        "total_over_by": 0.35,
+        "periods": [
+          {
+            "start_date": "2022-08-07",
+            "end_date": "2022-09-06",
+            "currency_code": "aud",
+            "actual_amount": -42,
+            "forecast_amount": -41.65,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": true,
+            "under_budget": false,
+            "over_by": 0.35,
+            "under_by": 0,
+            "percentage_used": 100
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862722,
+        "title": "Doctors",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862719,
+        "roll_up": false,
+        "created_at": "2022-08-12T09:36:30Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -35,
+        "average_forecast_amount": -35,
+        "total_under_by": 35,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -35,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 35,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862728,
+        "title": "Medications & Supplements",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862719,
+        "roll_up": false,
+        "created_at": "2022-08-12T09:36:30Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -38.98,
+        "average_actual_amount": -38.98,
+        "total_forecast_amount": -85,
+        "average_forecast_amount": -85,
+        "total_under_by": 46.02,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -38.98,
+            "forecast_amount": -85,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 46.02,
+            "percentage_used": 45
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862734,
+        "title": "Physiotherapy",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862719,
+        "roll_up": false,
+        "created_at": "2022-08-12T09:36:30Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -79.9,
+        "average_actual_amount": -79.9,
+        "total_forecast_amount": -45,
+        "average_forecast_amount": -45,
+        "total_under_by": 0,
+        "total_over_by": 34.9,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -79.9,
+            "forecast_amount": -45,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": true,
+            "under_budget": false,
+            "over_by": 34.9,
+            "under_by": 0,
+            "percentage_used": 177
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9871668,
+        "title": "Health Equipment",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862719,
+        "roll_up": false,
+        "created_at": "2022-08-13T11:20:33Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -20,
+        "average_forecast_amount": -20,
+        "total_under_by": 20,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -20,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 20,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9320607,
+        "title": "Internet",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862740,
+        "roll_up": false,
+        "created_at": "2022-07-05T11:21:49Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -69,
+        "average_actual_amount": -69,
+        "total_forecast_amount": -75,
+        "average_forecast_amount": -75,
+        "total_under_by": 6,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -69,
+            "forecast_amount": -75,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 6,
+            "percentage_used": 92
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862752,
+        "title": "Water",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862740,
+        "roll_up": false,
+        "created_at": "2022-08-12T09:36:32Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -15,
+        "average_forecast_amount": -15,
+        "total_under_by": 15,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -15,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 15,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862755,
+        "title": "Electricity",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": true,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862740,
+        "roll_up": false,
+        "created_at": "2022-08-12T09:36:32Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -113.05,
+        "average_forecast_amount": -113.05,
+        "total_under_by": 113.05,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -113.05,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 113.05,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862758,
+        "title": "Gas",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862740,
+        "roll_up": false,
+        "created_at": "2022-08-12T09:36:32Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -35,
+        "average_forecast_amount": -35,
+        "total_under_by": 35,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -35,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 35,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9871200,
+        "title": "Household Items",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862740,
+        "roll_up": false,
+        "created_at": "2022-08-13T09:46:33Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -74.98,
+        "average_actual_amount": -74.98,
+        "total_forecast_amount": -750,
+        "average_forecast_amount": -750,
+        "total_under_by": 675.02,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -74.98,
+            "forecast_amount": -750,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 675.02,
+            "percentage_used": 9
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9320724,
+        "title": "Coffee Toys",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862764,
+        "roll_up": false,
+        "created_at": "2022-07-05T11:26:37Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -75.34,
+        "average_actual_amount": -75.34,
+        "total_forecast_amount": -150,
+        "average_forecast_amount": -150,
+        "total_under_by": 74.66,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -75.34,
+            "forecast_amount": -150,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 74.66,
+            "percentage_used": 50
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9320541,
+        "title": "Electronics",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862764,
+        "roll_up": false,
+        "created_at": "2022-07-05T11:20:29Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -11.95,
+        "average_actual_amount": -11.95,
+        "total_forecast_amount": -35,
+        "average_forecast_amount": -35,
+        "total_under_by": 23.05,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -11.95,
+            "forecast_amount": -35,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 23.05,
+            "percentage_used": 34
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9320766,
+        "title": "Drinking Out",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862776,
+        "roll_up": false,
+        "created_at": "2022-07-05T11:35:25Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-22",
+        "end_date": "2022-08-28",
+        "currency_code": "aud",
+        "total_actual_amount": -17.5,
+        "average_actual_amount": -17.5,
+        "total_forecast_amount": -130,
+        "average_forecast_amount": -130,
+        "total_under_by": 112.5,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-22",
+            "end_date": "2022-08-28",
+            "currency_code": "aud",
+            "actual_amount": -17.5,
+            "forecast_amount": -130,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 112.5,
+            "percentage_used": 13
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9323052,
+        "title": "Drinking In",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862776,
+        "roll_up": false,
+        "created_at": "2022-07-05T23:43:33Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -146.97,
+        "average_actual_amount": -146.97,
+        "total_forecast_amount": -190,
+        "average_forecast_amount": -190,
+        "total_under_by": 43.03,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -146.97,
+            "forecast_amount": -190,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 43.03,
+            "percentage_used": 77
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862779,
+        "title": "Parties and Functions",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862764,
+        "roll_up": false,
+        "created_at": "2022-08-12T09:36:33Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -30,
+        "average_forecast_amount": -30,
+        "total_under_by": 30,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -30,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 30,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862782,
+        "title": "Streaming Services",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862764,
+        "roll_up": false,
+        "created_at": "2022-08-12T09:36:33Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -35.97,
+        "average_actual_amount": -35.97,
+        "total_forecast_amount": -30,
+        "average_forecast_amount": -30,
+        "total_under_by": 0,
+        "total_over_by": 5.97,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -35.97,
+            "forecast_amount": -30,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": true,
+            "under_budget": false,
+            "over_by": 5.97,
+            "under_by": 0,
+            "percentage_used": 119
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9871254,
+        "title": "Festivals, Exhibitions, Live Shows & Music",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862764,
+        "roll_up": false,
+        "created_at": "2022-08-13T10:02:46Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -445.5,
+        "average_actual_amount": -445.5,
+        "total_forecast_amount": -70,
+        "average_forecast_amount": -70,
+        "total_under_by": 0,
+        "total_over_by": 375.5,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -445.5,
+            "forecast_amount": -70,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": true,
+            "under_budget": false,
+            "over_by": 375.5,
+            "under_by": 0,
+            "percentage_used": 636
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9871257,
+        "title": "Leisure Activities",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862764,
+        "roll_up": false,
+        "created_at": "2022-08-13T10:02:46Z",
+        "updated_at": "2022-08-27T07:36:11Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -17,
+        "average_forecast_amount": -17,
+        "total_under_by": 17,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -17,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 17,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9323061,
+        "title": "Super Contributions",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862620,
+        "roll_up": false,
+        "created_at": "2022-07-05T23:45:57Z",
+        "updated_at": "2022-08-27T07:39:08Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-07-01",
+        "end_date": "2023-06-30",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -27500,
+        "average_forecast_amount": -27500,
+        "total_under_by": 27500,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-07-01",
+            "end_date": "2023-06-30",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -27500,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 27500,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9858909,
+        "title": "Incidentals",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862620,
+        "roll_up": false,
+        "created_at": "2022-08-12T00:38:04Z",
+        "updated_at": "2022-08-27T06:13:20Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -30,
+        "average_forecast_amount": -30,
+        "total_under_by": 30,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -30,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 30,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9320760,
+        "title": "Mum & Dad",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862620,
+        "roll_up": false,
+        "created_at": "2022-07-05T11:34:03Z",
+        "updated_at": "2022-08-27T06:13:20Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -244,
+        "average_actual_amount": -244,
+        "total_forecast_amount": -300,
+        "average_forecast_amount": -300,
+        "total_under_by": 56,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -244,
+            "forecast_amount": -300,
+            "refund_amount": 36,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 56,
+            "percentage_used": 81
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862785,
+        "title": "Health Insurance",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862623,
+        "roll_up": false,
+        "created_at": "2022-08-12T09:36:33Z",
+        "updated_at": "2022-08-27T06:13:21Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -150,
+        "average_forecast_amount": -150,
+        "total_under_by": 150,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -150,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 150,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862791,
+        "title": "Counselling",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862623,
+        "roll_up": false,
+        "created_at": "2022-08-12T09:36:34Z",
+        "updated_at": "2022-08-27T06:24:29Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-09-30",
+        "currency_code": "aud",
+        "total_actual_amount": -220,
+        "average_actual_amount": -220,
+        "total_forecast_amount": -220,
+        "average_forecast_amount": -220,
+        "total_under_by": 0,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-09-30",
+            "currency_code": "aud",
+            "actual_amount": -220,
+            "forecast_amount": -220,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 0,
+            "percentage_used": 100
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9871563,
+        "title": "Financial Management",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862620,
+        "roll_up": false,
+        "created_at": "2022-08-13T10:31:57Z",
+        "updated_at": "2022-08-27T06:13:21Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": -10.95,
+        "average_actual_amount": -10.95,
+        "total_forecast_amount": -35,
+        "average_forecast_amount": -35,
+        "total_under_by": 24.05,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": -10.95,
+            "forecast_amount": -35,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 24.05,
+            "percentage_used": 31
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862911,
+        "title": "Gifts & Donations",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": null,
+        "children": [
+          {
+            "id": 9862917,
+            "title": "Charity",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862911,
+            "roll_up": false,
+            "created_at": "2022-08-12T10:36:41Z",
+            "updated_at": "2022-08-27T06:09:46Z"
+          },
+          {
+            "id": 9862914,
+            "title": "Gift",
+            "colour": null,
+            "is_transfer": false,
+            "is_bill": false,
+            "refund_behaviour": "credits_are_refunds",
+            "children": [],
+            "parent_id": 9862911,
+            "roll_up": false,
+            "created_at": "2022-08-12T10:36:41Z",
+            "updated_at": "2022-08-27T06:13:21Z"
+          }
+        ],
+        "parent_id": null,
+        "roll_up": true,
+        "created_at": "2022-08-12T10:36:41Z",
+        "updated_at": "2022-08-27T06:09:46Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -50,
+        "average_forecast_amount": -50,
+        "total_under_by": 50,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -50,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 50,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9862914,
+        "title": "Gift",
+        "colour": null,
+        "is_transfer": false,
+        "is_bill": false,
+        "refund_behaviour": "credits_are_refunds",
+        "children": [],
+        "parent_id": 9862911,
+        "roll_up": false,
+        "created_at": "2022-08-12T10:36:41Z",
+        "updated_at": "2022-08-27T06:13:21Z"
+      },
+      "is_transfer": false,
+      "expense": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": -50,
+        "average_forecast_amount": -50,
+        "total_under_by": 50,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": -50,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 50,
+            "percentage_used": 0
+          }
+        ]
+      },
+      "income": null
+    },
+    {
+      "category": {
+        "id": 9876045,
+        "title": "Cash",
+        "colour": null,
+        "is_transfer": true,
+        "is_bill": false,
+        "refund_behaviour": null,
+        "children": [],
+        "parent_id": null,
+        "roll_up": false,
+        "created_at": "2022-08-14T01:58:42Z",
+        "updated_at": "2022-08-27T06:19:11Z"
+      },
+      "is_transfer": false,
+      "expense": null,
+      "income": {
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "currency_code": "aud",
+        "total_actual_amount": 0,
+        "average_actual_amount": 0,
+        "total_forecast_amount": 35,
+        "average_forecast_amount": 35,
+        "total_under_by": 35,
+        "total_over_by": 0,
+        "periods": [
+          {
+            "start_date": "2022-08-01",
+            "end_date": "2022-08-31",
+            "currency_code": "aud",
+            "actual_amount": 0,
+            "forecast_amount": 35,
+            "refund_amount": 0,
+            "current": true,
+            "over_budget": false,
+            "under_budget": true,
+            "over_by": 0,
+            "under_by": 35,
+            "percentage_used": 0
+          }
+        ]
+      }
+    }
+  ]
