@@ -1,0 +1,139 @@
+applianceInfo:
+  softwareVersion:
+  hostname: CFN-LDU-AEC-01
+  group: CFN
+  site: LDU
+  networkRole: non-hub
+  region: LDU
+  location:
+    address: 78 Stirling Street
+    address2:
+    city: Perth
+    state: Western Australia
+    zipCode: 6000
+    country: AU
+    latitude: 
+    longitude: 
+  contact:
+    name: CFN Admin
+    email: admin@convergedflow.net
+    phoneNumber:
+
+templateGroups:
+  groups:
+    - Default Template Group
+    - CFN
+
+businessIntentOverlays:
+    overlays:
+      - RealTime
+      - CriticalApps
+      - BulkApps
+      - DefaultOverlay
+
+deploymentInfo:
+  deploymentMode: inline-router
+  totalOutboundBandwidth: 20000
+  totalInboundBandwidth: 50000
+  shapeInboundTraffic: true
+  ipsecUdpPort: 12000
+  passThroughShapedTraffic:
+    outboundMaxBandwidth: 10000000
+
+  deploymentInterfaces:
+    - interfaceName: lan0.1
+      interfaceLabel: None
+      interfaceType: lan
+      interfaceComment: 
+      ipAddressMask: 198.168.20.1/24
+      nextHop: 
+      segment: Default
+      zone:
+
+    - interfaceName: wan0
+      interfaceLabel: INET1
+      interfaceType: wan
+      ipAddressMask: 
+      nextHop: 
+      outboundMaxBandwidth: 20000
+      inboundMaxBandwidth: 50000
+      firewallMode: statefulSNAT
+      behindNat: none
+
+  dhcpInfo:
+    - dhcpInterfaceName: lan0.1
+      dhcpType: server
+      dhcpAddressMask: 198.168.20.0/24
+      startIpAddress: 198.168.20.16
+      endIpAddress: 198.168.20.254
+      gatewayIpAddress: 198.168.20.1
+      dnsServers:
+        - 1.1.1.1
+      netbiosNodeType: B
+      maximumLease: 24
+      defaultLease: 24
+      options:
+        - option: 1
+          value: 255.255.255.0
+
+ecLicensing:
+  useDefaultAccount: true
+  bandwidthLevel: unlimited
+  boost: 20000
+ 
+segmentLocalRoutes:
+  - segment: Default
+    useSharedSubnetInfo: true
+    advertiseLocalLanSubnets: false
+    advertiseLocalWanSubnets: false
+    localMetric: 50
+    localCommunities:
+    redistOspfToSubnetShare: false
+    ospfRedistMetric: 0
+    ospfRedistTag: 0
+    filterRoutesWithLocalASN: false
+    redistToSDwanFabricRouteMap: "default_rtmap_to_subsh"
+
+
+
+
+
+
+
+segmentBgpSystems:
+  - segment: Default
+    enable: true
+    asn: 
+    routerId: 10.255.255.127
+    enableGracefulRestart: false
+    maxRestartTime: 120
+    maxStalePathTime: 150
+    redistToSilverPeak: false
+    propagateAsPath: true
+    redistOspfToBgp: true
+    filterTag: 0
+
+
+
+inboundPortForwarding:
+  portForwardingRules:
+    - sourceIpSubnet: 0.0.0.0/0
+      destinationIpSubnet: 159.196.203.85/32
+      translate: true
+      destinationPortRange: 1194-1194
+      destinationProtocol: udp
+      translateIp: 10.169.130.254
+      translatePortRange: 1194-1194
+      sourceInterface: any
+      segment: Default
+      comment: OpenVPN
+    - sourceIpSubnet: 0.0.0.0/0
+      destinationIpSubnet: 159.196.203.85/32
+      translate: true
+      destinationPortRange: 443-443
+      destinationProtocol: tcp
+      translateIp: 10.169.131.240
+      translatePortRange: 443-443
+      sourceInterface: any
+      segment: Default
+      comment: Orchestrator
