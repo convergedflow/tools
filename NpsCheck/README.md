@@ -60,13 +60,13 @@ Optionally, add the folder to your `$env:PATH` so you can run the script from an
 
 ```powershell
 # Check if policy was used in the last 6 hours
-.\Check-NPSPolicyUsage.ps1 -PolicyName "JSE-Corp" -HoursBack 6
+.\Check-NPSPolicyUsage.ps1 -PolicyName "XYZ-Corp" -HoursBack 6
 
 # Check the last 90 minutes, only show the most recent hit
-.\Check-NPSPolicyUsage.ps1 -PolicyName "JSE-Corp" -MinutesBack 90 -LatestOnly
+.\Check-NPSPolicyUsage.ps1 -PolicyName "XYZ-Corp" -MinutesBack 90 -LatestOnly
 
 # Check the last 14 days (default is 30 if not supplied)
-.\Check-NPSPolicyUsage.ps1 -PolicyName "JSE-Corp" -DaysBack 14
+.\Check-NPSPolicyUsage.ps1 -PolicyName "XYZ-Corp" -DaysBack 14
 ```
 
 ---
