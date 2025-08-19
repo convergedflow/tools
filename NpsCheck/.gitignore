@@ -1,0 +1,31 @@
+# Ignore temporary files created by PowerShell ISE / editors
+*.ps1~ 
+*.psm1~ 
+*.psd1~ 
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Ignore compiled PowerShell modules
+*.dll
+*.exe
+
+# Ignore logs and outputs
+*.log
+*.out
+*.err
+
+# Ignore VS Code workspace settings and history
+.vscode/
+.history/
+
+# Ignore build / packaging artifacts
+bin/
+obj/
+Release/
+Debug/
+
+# Ignore environment-specific files
+Thumbs.db
+.DS_Store
