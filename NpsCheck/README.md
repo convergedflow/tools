@@ -1,102 +1,118 @@
 # Check-NPSPolicyUsage
 
-PowerShell script for auditing **Microsoft NPS (Network Policy Server)** logs to see if a specific RADIUS policy is being hit.  
-This is especially useful when cleaning up old policies and you want to be certain before disabling them.
+A PowerShell script to search the **Windows Security log** for **NPS (RADIUS) policy hits**.  
+Use it to verify whether specific **Network Policies** or **Connection Request Policies** are being used, who authenticated, the client IP, and whether access was **Granted** or **Denied**.
 
 ---
 
 ## ✨ Features
 
-- Searches both **System** and **Security** event logs for policy hits
-- Filters results by **minutes**, **hours**, or **days**
-- Shows either **all hits** or just the **most recent** with `-LatestOnly`
-- Extracts **username** and **client IP/host** (when available)
-- Handles empty logs gracefully (no ugly errors if no matches are found)
+- Search by event XML fields:
+  - **NetworkPolicyName**
+  - **ProxyPolicyName** (also covers **ConnectionRequestPolicyName** for 6272/6273)
+  - **ConnectionRequestPolicyName** (alias of ProxyPolicyName)
+  - **CalledStationID**
+- Exact or **contains** matching (`-Contains`).
+- Time window via **minutes**, **hours**, or **days**.
+- Clean, **autosized** console table with:
+  - **TimeCreated**
+  - **Access** (Granted/Denied, color-coded)
+  - **UserName**
+  - **ClientIP**
+  - **AuthType**
+  - **EAPType** (normalized to `EAP-TLS` for “Microsoft: Smart Card or other certificate”)
+- Works on **Windows PowerShell 5.1** (and later).
 
 ---
 
-## 🛠 Requirements
+## 🧰 Requirements
 
-- Windows Server with **NPS installed** and auditing enabled  
-- **Administrator PowerShell session** (needed to read the Security log)  
-- PowerShell **5.1 or later** (works on PowerShell 7+ too)  
+- Windows with **PowerShell 5.1+**
+- Run **as Administrator** (needed to read the Security log)
+- NPS role enabled and Security auditing producing 6272/6273 events
 
 ---
 
 ## 📥 Installation
 
-Clone this repository or download the script file:
+Clone or download the script:
 
 ```powershell
-git clone https://github.com/<yourusername>/Check-NPSPolicyUsage.git
+git clone https://github.com/<your-org-or-user>/Check-NPSPolicyUsage.git
 cd Check-NPSPolicyUsage
 ```
-
-Optionally, add the folder to your `$env:PATH` so you can run the script from anywhere.
 
 ---
 
 ## 🚀 Usage
 
-### Basic Syntax
-
+### Match a Network Policy (exact)
 ```powershell
-.\Check-NPSPolicyUsage.ps1 -PolicyName "<PolicyName>" [-MinutesBack <int>] [-HoursBack <int>] [-DaysBack <int>] [-LatestOnly]
+.\Check-NPSPolicyUsage.ps1 -PolicyName "Wireless 802.1x | EAP-TLS | CORP Role" -HoursBack 1 -MatchField NetworkPolicyName
+```
+
+### Match a Connection Request Policy (use ProxyPolicyName)
+```powershell
+.\Check-NPSPolicyUsage.ps1 -PolicyName "Use Windows authentication for all users" -MinutesBack 10 -MatchField ProxyPolicyName
+```
+
+### Fuzzy contains match across a field
+```powershell
+.\Check-NPSPolicyUsage.ps1 -PolicyName "EAP-TLS" -DaysBack 1 -MatchField NetworkPolicyName -Contains
 ```
 
 ### Parameters
 
-| Parameter      | Description                                                                 | Default |
-|----------------|-----------------------------------------------------------------------------|---------|
-| `-PolicyName`  | **(Required)** Name of the NPS policy to search for.                        | —       |
-| `-MinutesBack` | Look back over the last X minutes. Overrides `-HoursBack` and `-DaysBack`.  | —       |
-| `-HoursBack`   | Look back over the last X hours. Overrides `-DaysBack`.                     | —       |
-| `-DaysBack`    | Look back over the last X days (used if neither minutes nor hours provided).| 30      |
-| `-LatestOnly`  | Show only the most recent matching event instead of all.                    | False   |
+| Parameter        | Type    | Default              | Description                                                                                     |
+|------------------|---------|----------------------|-------------------------------------------------------------------------------------------------|
+| `-PolicyName`    | string  | — (required)         | The value to match against the selected field.                                                  |
+| `-MatchField`    | enum    | `NetworkPolicyName`  | One of `NetworkPolicyName`, `ProxyPolicyName`, `ConnectionRequestPolicyName`, `CalledStationID`. |
+| `-MinutesBack`   | int     | —                    | Look back this many minutes (takes precedence over hours/days).                                 |
+| `-HoursBack`     | int     | —                    | Look back this many hours (takes precedence over days).                                         |
+| `-DaysBack`      | int     | `1` (effective)      | Look back this many days (used if minutes/hours not provided).                                  |
+| `-Contains`      | switch  | exact match          | Use substring (case-insensitive) instead of exact match.                                        |
 
----
-
-### Examples
-
-```powershell
-# Check if policy was used in the last 6 hours
-.\Check-NPSPolicyUsage.ps1 -PolicyName "XYZ-Corp" -HoursBack 6
-
-# Check the last 90 minutes, only show the most recent hit
-.\Check-NPSPolicyUsage.ps1 -PolicyName "XYZ-Corp" -MinutesBack 90 -LatestOnly
-
-# Check the last 14 days (default is 30 if not supplied)
-.\Check-NPSPolicyUsage.ps1 -PolicyName "XYZ-Corp" -DaysBack 14
-```
+**Note:** `ConnectionRequestPolicyName` is stored in 6272/6273 as **ProxyPolicyName**; the script maps this for you automatically.
 
 ---
 
 ## 📊 Output
 
-### Standard run
-```
-TimeCreated           Id   Source        UserName   Client
------------           --   ------        --------   ------
-2025-08-19 13:45:10  6272 Security-NPS  alice      10.10.5.25
-2025-08-19 13:47:32  6273 Security-NPS  bob        10.10.8.44
-```
+- Autosized columns with two spaces between each column.
+- **Access** is derived from the event ID: `6272 = Granted`, `6273 = Denied`.
+- `EAPType` is normalized to `EAP-TLS` for “Microsoft: Smart Card or other certificate”.
 
-### With `-LatestOnly`
+Example:
+
 ```
-Most recent hit: 2025-08-19 13:45:10  [Event 6272 / Security-NPS]  User: alice  Client: 10.10.5.25
+TimeCreated              Access   UserName                              ClientIP        AuthType          EAPType
+---------------------------------------------------------------------------------------------------------------
+2025-08-19 15:15:33      Granted  host/PER1HJYKX3.jse.com               10.2.8.14       EAP               EAP-TLS
+2025-08-19 15:17:56      Denied   host/MONHJS9XM3.jse.com               10.2.8.14       EAP               EAP-TLS
 ```
 
 ---
 
-## 📌 Notes
+## 🔎 What it actually searches
 
-- **Security log events** 6272 (*Access granted*) and 6273 (*Access denied*) are where NPS policy matches usually appear.  
-- The **System log** may also contain NPS provider events depending on server configuration.  
-- If no events are found in the specified time window, the script reports cleanly without errors.  
-- Always run the script in an **elevated PowerShell session** to ensure access to the Security log.  
+The script reads **Security** log events **6272** (granted) and **6273** (denied), parses the **event XML** (not the free-form message), and filters by the selected field:
+- `NetworkPolicyName`
+- `ProxyPolicyName` (CRP)
+- `ConnectionRequestPolicyName` (alias to `ProxyPolicyName`)
+- `CalledStationID`
+
+This avoids false matches from unrelated fields (e.g., AP SSIDs or cert subjects).
+
+---
+
+## ⚠️ Troubleshooting
+
+- **“Access denied / unauthorized”** when reading Security logs → Run PowerShell **as Administrator**.
+- **No results** → Expand the time window (e.g., `-HoursBack 6`) or confirm the exact policy name in Event Viewer.
+- **Policy names** → In Event Viewer, open a 6272/6273 event, view the **XML** tab, and copy the exact field value.
 
 ---
 
 ## 📄 License
 
-MIT License — see [LICENSE](LICENSE) for details.
+Released under the **MIT License**. See [LICENSE](LICENSE) for details.
