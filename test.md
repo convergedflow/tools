@@ -1,3 +1,194 @@
+# ZTC Generator
+
+Generate Zero Touch Configuration (`.yml`) files from a Jinja2 template and a CSV input file.
+
+`ztc_generator.py` renders one YAML file per CSV row, making it easy to produce device-specific ZTC files from a shared template.
+
+## Requirements
+
+- Python 3.9 or later
+- `jinja2`
+- `ruamel.yaml`
+
+Install dependencies:
+
+```powershell
+pip install jinja2 ruamel.yaml
+```
+
+## Project Files
+
+| File | Description |
+|------|-------------|
+| `ztc_generator.py` | Main generator script |
+| `spoke-ec10106.j2` | Jinja2 template for spoke appliances |
+| `spoke-ec10106-inputs.csv` | Reference CSV input for use with the template |
+| `ztc_inputs.xlsx` | Source spreadsheet for building the CSV |
+| `output/` | Default directory for generated YAML files |
+
+## Usage
+
+```powershell
+python ztc_generator.py <template> <csv> [-o <output-directory>]
+```
+
+### Arguments
+
+| Argument | Description |
+|----------|-------------|
+| `<template>` | Path to the Jinja2 template file (`.j2`) |
+| `<csv>` | Path to the CSV input file |
+| `-o`, `--output` | Output directory for generated files (default: `output`) |
+
+### Example
+
+```powershell
+python ztc_generator.py spoke-ec10106.j2 spoke-ec10106-inputs.csv -o output
+```
+
+On Windows you can also use `py` in place of `python`.
+
+## How It Works
+
+For each row in the CSV, the script:
+
+1. Reads the row as a set of template variables
+2. Renders the Jinja2 template with those variables
+3. Writes the result to a YAML file named:
+
+```
+<hostname>-ztc-YYYY-MM-DD.yml
+```
+
+**Example output filename:**
+
+```
+ops-test1-router-ztc-2026-04-16.yml
+```
+
+The output directory is created automatically if it does not already exist.
+
+## CSV Requirements
+
+The input CSV must:
+
+- Include a header row
+- Use column names that match the variable names referenced in the template
+- Include a `hostname` column — this is used to build the output filename
+
+### Required columns (for `spoke-ec10106.j2`)
+
+| Column | Description |
+|--------|-------------|
+| `serial` | Device serial number |
+| `hostname` | Device hostname (used in output filename) |
+| `softwareVersion` | Target software version |
+| `group` | Orchestrator group name |
+| `site` | Site name |
+| `siteCode` | Numeric site code (used in IP addressing and BGP ASN) |
+| `address`, `address2`, `city`, `state`, `zipCode`, `country` | Physical address fields |
+| `latitude`, `longitude` | Optional GPS coordinates |
+| `name`, `email` | Contact details |
+| `totalOutboundBandwidth`, `totalInboundBandwidth` | WAN bandwidth in kbps |
+| `secWanInterfaceName` | Secondary WAN interface name — leave blank to omit the secondary WAN block |
+| `secWanInterfaceLabel`, `secWanInterfaceComment` | Secondary WAN labels |
+| `secWanIpAddressMask`, `secWanNextHop` | Secondary WAN IP configuration |
+| `secWanOutboundMaxBandwidth`, `secWanInboundMaxBandwidth` | Secondary WAN bandwidth in kbps |
+| `secWanFirewallMode`, `secWanBehindNat`, `secWanZone` | Secondary WAN firewall settings |
+
+## Template Overview
+
+`spoke-ec10106.j2` is a YAML file with Jinja2 expressions embedded. The template produces a ZTC file structured as:
+
+| Section | Description |
+|---------|-------------|
+| `applianceInfo` | Hostname, software version, group, site, location, and contact |
+| `templateGroups` | Template group assignments |
+| `businessIntentOverlays` | Overlay membership |
+| `deploymentInfo` | WAN/LAN interfaces, bandwidth, and DHCP relay |
+| `ecLicensing` | Licensing tier settings |
+| `segmentLocalRoutes` | Route advertisement behaviour |
+| `segmentBgpSystems` | BGP ASN and router ID |
+| `linkAggregation` | LAN bond (LACP) configuration |
+| `poE` | PoE port settings |
+
+### Variable substitution
+
+CSV column values are injected using standard Jinja2 expressions:
+
+```jinja2
+hostname: {{ hostname }}
+site: {{ site }}
+```
+
+### Derived values
+
+Some values are computed from CSV data inside the template. For example, LAN IP addresses are built from `siteCode`:
+
+```jinja2
+ipAddressMask: 10.{{ siteCode }}.175.50/24
+```
+
+The BGP ASN is derived by zero-padding `siteCode` to two digits:
+
+```jinja2
+asn: 650{{ "%02d" | format(siteCode | int) }}
+```
+
+So `siteCode` of `5` produces ASN `65005`, and `12` produces `65012`.
+
+### Conditional sections
+
+The secondary WAN interface block is only included when `secWanInterfaceName` has a value:
+
+```jinja2
+{% if secWanInterfaceName %}
+    - interfaceName: {{ secWanInterfaceName }}
+      ...
+{% endif %}
+```
+
+Leave the `secWanInterfaceName` column blank in the CSV to omit this block entirely.
+
+## Example Workflow
+
+1. Populate device data in `spoke-ec10106-inputs.csv` (or export from `ztc_inputs.xlsx`)
+2. Update `spoke-ec10106.j2` if the template needs changes
+3. Run the generator:
+   ```powershell
+   python ztc_generator.py spoke-ec10106.j2 spoke-ec10106-inputs.csv -o output
+   ```
+4. Review the generated files in `output/`
+
+### Example console output
+
+```
+Created output directory: output
+Generated: output\ops-test1-router-ztc-2026-04-16.yml
+Generated: output\ops-test2-router-ztc-2026-04-16.yml
+Generated: output\ops-hd-router-ztc-2026-04-16.yml
+```
+
+## Error Handling
+
+The script exits with a non-zero status and prints an error message if:
+
+- The template file does not exist
+- The CSV file does not exist
+- A template variable references a column that is missing from the CSV
+
+**Example:**
+
+```
+Error: Template file not found: spoke-ec10106.j2
+```
+
+## Notes
+
+- Output filenames use the lowercase value of `hostname` plus the current date
+- YAML output is written directly from the rendered template rather than being re-serialised, which preserves comments and formatting from the template file
+- `ruamel.yaml` is imported but not used for output serialisation — it is available for future use if parsed YAML manipulation is needed
+
 # ZTC Variable Reference
 
 This document lists every field produced in the ZTC output YAML, showing whether each value comes from the CSV input, is derived from CSV data inside the template, or is hardcoded in the template.
